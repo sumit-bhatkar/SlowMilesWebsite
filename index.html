@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Slow Miles | Meaningful Journeys</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--brand:#5b6552;
+--light:#f7f6f2;
+--dark:#2f3a2f;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Inter,sans-serif;
+background:var(--light);
+color:var(--dark);
+}
+
+.hero{
+height:100vh;
+background-image:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.42);
+}
+
+.section-title{
+font-family:'Cormorant Garamond', serif;
+}
+
+.card:hover{
+transform:translateY(-6px);
+transition:.35s ease;
+box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.fade-up{
+opacity:0;
+transform:translateY(30px);
+animation:fadeup 1.3s forwards;
+}
+
+@keyframes fadeup{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="fixed top-0 w-full backdrop-blur-md bg-black/20 z-50 py-5">
+
+<div class="max-w-7xl mx-auto px-8 flex justify-between items-center text-white">
+
+<div>
+<img
+src="logo.png"
+alt="Slow Miles"
+class="h-14 md:h-16 object-contain"
+/>
+</div>
+
+<div class="hidden md:block space-x-8 uppercase text-sm tracking-wider">
+<a href="#about">About</a>
+<a href="#journeys">Journeys</a>
+<a href="#journal">Journal</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="hero flex items-center relative">
+
+<div class="max-w-7xl mx-auto px-8 text-white relative z-10">
+
+<div class="fade-up">
+
+<h1 class="section-title text-7xl leading-tight font-light max-w-4xl">
+Travel slower.<br>
+Experience deeper.
+</h1>
+
+<p class="mt-8 text-xl max-w-2xl leading-10 opacity-90">
+Travel designed for people who believe seeing less often means experiencing more.
+</p>
+
+<button class="mt-12 bg-[#5b6552] px-8 py-4 tracking-wide hover:opacity-90 transition">
+EXPLORE JOURNEYS
+</button>
+
+</div>
+</div>
+
+</section>
+
+
+
+
+<!-- PHILOSOPHY -->
+
+<section id="about" class="py-32">
+
+<div class="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
+
+<div>
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+class="rounded-lg"
+/>
+</div>
+
+
+<div>
+
+<p class="uppercase tracking-widest text-sm text-gray-500 mb-5">
+OUR PHILOSOPHY
+</p>
+
+<h2 class="section-title text-5xl mb-8">
+For people who travel differently.
+</h2>
+
+<div class="space-y-5 text-lg leading-9 text-gray-700">
+
+<p>No rushed sightseeing.</p>
+<p>No exhausting package tours.</p>
+<p>No checklist tourism.</p>
+
+<p>
+Slow Miles is for travellers who value atmosphere, silence, longer stays and the kind of journeys remembered long after returning home.
+</p>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+
+
+<!-- FEATURES -->
+
+<section class="bg-white py-20 border-t border-b">
+
+<div class="max-w-6xl mx-auto px-8 grid md:grid-cols-4 gap-12 text-center">
+
+<div>
+<h3 class="font-medium mb-4 uppercase text-sm">Slow Travel</h3>
+<p>Fewer places. Longer stays.</p>
+</div>
+
+<div>
+<h3 class="font-medium mb-4 uppercase text-sm">Meaningful Experiences</h3>
+<p>Local culture and real connection.</p>
+</div>
+
+<div>
+<h3 class="font-medium mb-4 uppercase text-sm">Curated Stays</h3>
+<p>Personally vetted accommodation.</p>
+</div>
+
+<div>
+<h3 class="font-medium mb-4 uppercase text-sm">For Real Life</h3>
+<p>Designed for professionals and families.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- JOURNEYS -->
+
+<section id="journeys" class="py-32">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<h2 class="section-title text-6xl text-center mb-20">
+Upcoming Journeys
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="card bg-white p-10 rounded-lg">
+<h3 class="text-3xl mb-6 section-title">
+Slow Himalayas
+</h3>
+
+<p class="leading-8 text-gray-600">
+Mountain villages, local experiences, forest walks and quiet stays.
+</p>
+
+<p class="mt-8 uppercase text-sm tracking-wide text-gray-500">
+Coming Soon
+</p>
+</div>
+
+
+<div class="card bg-white p-10 rounded-lg">
+<h3 class="text-3xl mb-6 section-title">
+Mountain Workcations
+</h3>
+
+<p class="leading-8 text-gray-600">
+Work remotely from carefully selected mountain stays with verified internet.
+</p>
+
+<p class="mt-8 uppercase text-sm tracking-wide text-gray-500">
+Coming Soon
+</p>
+</div>
+
+
+<div class="card bg-white p-10 rounded-lg">
+<h3 class="text-3xl mb-6 section-title">
+Road Escapes
+</h3>
+
+<p class="leading-8 text-gray-600">
+Self-drive journeys through beautiful landscapes with thoughtfully selected stays.
+</p>
+
+<p class="mt-8 uppercase text-sm tracking-wide text-gray-500">
+Coming Soon
+</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+
+
+<!-- JOURNAL -->
+
+<section id="journal" class="bg-[#f2f1ed] py-32">
+
+<div class="max-w-5xl mx-auto text-center px-8">
+
+<p class="uppercase text-sm tracking-widest text-gray-500 mb-6">
+TRAVEL JOURNAL
+</p>
+
+<h2 class="section-title text-6xl">
+Stories from roads,<br>
+villages and silence.
+</h2>
+
+<p class="mt-10 text-lg max-w-2xl mx-auto text-gray-600 leading-9">
+Observations from journeys through forests, tea stalls, changing weather, village roads and quiet landscapes.
+</p>
+
+<button class="mt-12 border border-gray-700 px-8 py-4">
+READ JOURNAL
+</button>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ABOUT -->
+
+<section class="py-32 bg-white">
+
+<div class="max-w-4xl mx-auto text-center px-8">
+
+<img
+src="logo.png"
+class="h-20 mx-auto mb-10"
+/>
+
+<h2 class="section-title text-5xl mb-10">
+Built for people who cannot travel all the time.
+</h2>
+
+<p class="text-lg leading-10 text-gray-700">
+Slow Miles grew from years of road journeys, quiet mountain stays and the belief that meaningful travel happens when we stop trying to see everything.
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<!-- FOOTER -->
+
+<footer id="contact" class="bg-black text-gray-300 py-20">
+
+<div class="text-center">
+
+<img
+src="logo.png"
+class="h-14 mx-auto mb-8"
+/>
+
+<div class="space-x-8 mb-6">
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">Newsletter</a>
+</div>
+
+<p class="text-sm opacity-40">
+Meaningful Journeys © 2026
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
